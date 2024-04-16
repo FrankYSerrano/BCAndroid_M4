@@ -1,6 +1,7 @@
 Working Time de la Lección 2:
   * HelloWorldAndroid
   * LogCatsAndroid
+  * Calculadora: LinearLayouts
 Working Time de la Lección 3:
   * 
 Working Time de la Lección 4:
