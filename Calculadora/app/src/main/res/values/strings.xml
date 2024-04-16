@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Calculadora</string>
+    <string name="calculadora_frank">Calculadora Frank</string>
+    <string name="Sumar">Sumar</string>
+    <string name="Restar">Restar</string>
+    <string name="Multiplicar">Multiplicar</string>
+    <string name="Dividir">Dividir</string>
+</resources>
