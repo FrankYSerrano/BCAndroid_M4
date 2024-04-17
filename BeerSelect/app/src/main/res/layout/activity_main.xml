@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/app_title_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jua_regular"
+        android:text="@string/select_your_beer"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imagen_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_title_txt"
+        android:background="@drawable/homer_beer" />
+    <Spinner
+        android:id="@+id/selector_beer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:entries="@array/beer_types"
+        android:layout_below="@+id/imagen_app"
+        />
+    <Button
+        android:id="@+id/btn_pedir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_pedir"
+        android:layout_below="@id/selector_beer"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/txt_comentario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn_pedir"
+        android:text="@string/txt_comentario"
+        android:textSize="30dp"/>
+
+
+</RelativeLayout>

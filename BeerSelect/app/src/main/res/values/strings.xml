@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">BeerSelect</string>
+    <string name="select_your_beer">Cuantas Cervezas te vas a tomar?</string>
+    <string name="btn_pedir">Pedir</string>
+    <string name="txt_comentario">comentario</string>
+    <string-array name="beer_types">
+        <item>Una</item>
+        <item>Dos</item>
+        <item>Tres</item>
+        <item>Cuatro</item>
+        <item>Cinco</item>
+        <item>Seis</item>
+    </string-array>
+</resources>
