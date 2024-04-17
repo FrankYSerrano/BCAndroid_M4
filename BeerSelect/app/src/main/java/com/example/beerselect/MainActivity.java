@@ -1,7 +1,9 @@
 package com.example.beerselect;
 
 import android.os.Bundle;
+import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -20,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     TextView txtComentario;
     Spinner seleccionCantidad;
     Button btn_pedir;
+    ImageView imagen_app;
 
     Mensajes mensaje = new Mensajes();
 
@@ -28,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        imagen_app = findViewById(R.id.imagen_app);
         txtComentario = findViewById(R.id.txt_comentario);
         seleccionCantidad = findViewById(R.id.selector_beer);
         btn_pedir = findViewById(R.id.btn_pedir);
@@ -42,5 +46,6 @@ public class MainActivity extends AppCompatActivity {
             }
             txtComentario.setText(typeFormatted);
         });
+
     }
 }
