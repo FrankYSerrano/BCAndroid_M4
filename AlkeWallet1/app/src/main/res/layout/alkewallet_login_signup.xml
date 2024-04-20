@@ -45,6 +45,7 @@
         android:fontFamily="@font/jua_regular"
         android:text="Crear cuenta nueva"
         android:textColor="@color/white"
+        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/textView_login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -62,6 +63,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         android:fontFamily="@font/jua_regular"
-        android:textSize="20dp"/>
+        android:textSize="20dp"
+        android:textColor="@color/azul_alkewallet"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
