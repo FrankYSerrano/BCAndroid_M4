@@ -63,13 +63,16 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayout_contrasena"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            app:endIconMode="password_toggle">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/jua_regular"
-                android:hint="Ingresa tu contraseña" />
+                android:hint="Ingresa tu contraseña"
+
+                />
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
@@ -80,7 +83,8 @@
             android:text="Olvidaste tu contraseña?"
             android:textColor="@color/azul_alkewallet"
             android:textSize="20dp"
-            app:layout_constraintEnd_toEndOf="@+id/layout_bloque" />
+            app:layout_constraintEnd_toEndOf="@+id/layout_bloque"
+            />
 
         />
     </LinearLayout>
