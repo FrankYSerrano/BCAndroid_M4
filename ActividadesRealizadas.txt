@@ -3,8 +3,8 @@ Working Time de la Lección 2:
   * LogCatsAndroid
   * Calculadora: LinearLayouts
   * BeerSelect: RelativeLayout
-  * : ConstraintLayout
-  * Tarea 21Abril: Linear/Relative + Constraint Layout
+  * ConstraintLayOutApp: ConstraintLayout Interestelar/TheRock
+  * AlkeWallet1: Tarea 21Abril: Linear/Relative + Constraint Layout
 
 Working Time de la Lección 3:
   * 
