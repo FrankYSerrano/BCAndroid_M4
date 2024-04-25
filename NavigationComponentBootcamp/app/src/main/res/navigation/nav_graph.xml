@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/inicioFragment">
+
+    <fragment
+        android:id="@+id/fragmentoUno"
+        android:name="com.example.navigationcomponentbootcamp.fragments.FragmentoUno"
+        android:label="fragment_fragmento_uno"
+        tools:layout="@layout/fragment_fragmento_uno" >
+        <action
+            android:id="@+id/action_fragmentoUno_to_inicioFragment"
+            app:destination="@id/inicioFragment"
+            app:enterAnim="@android:anim/bounce_interpolator" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentoDos"
+        android:name="com.example.navigationcomponentbootcamp.fragments.FragmentoDos"
+        android:label="fragment_fragmento_dos"
+        tools:layout="@layout/fragment_fragmento_dos" >
+        <action
+            android:id="@+id/action_fragmentoDos_to_fragmentThree"
+            app:destination="@id/fragmentThree" />
+    </fragment>
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="com.example.navigationcomponentbootcamp.InicioFragment"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" >
+        <action
+            android:id="@+id/action_inicioFragment_to_fragmentoUno"
+            app:destination="@id/fragmentoUno"
+            app:exitAnim="@android:anim/cycle_interpolator" />
+        <action
+            android:id="@+id/action_inicioFragment_to_fragmentoDos"
+            app:destination="@id/fragmentoDos" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentThree"
+        android:name="com.example.navigationcomponentbootcamp.fragments.FragmentThree"
+        android:label="fragment_three"
+        tools:layout="@layout/fragment_three" >
+        <action
+            android:id="@+id/action_fragmentThree_to_inicioFragment"
+            app:destination="@id/inicioFragment"
+            app:popEnterAnim="@android:anim/overshoot_interpolator" />
+    </fragment>
+</navigation>

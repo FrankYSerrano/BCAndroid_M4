@@ -5,86 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/imageView_background"
-        android:layout_width="1097dp"
-        android:layout_height="377dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/homepage_background" />
-
-    <ImageView
-        android:id="@+id/imageView_notifications"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        app:srcCompat="@drawable/notifications_icon"
-        tools:layout_editor_absoluteX="344dp"
-        tools:layout_editor_absoluteY="228dp" />
-
-    <ImageView
-        android:id="@+id/imageView_profile_picture"
-        android:layout_width="67dp"
-        android:layout_height="84dp"
-        app:srcCompat="@drawable/profile_picture"
-        tools:layout_editor_absoluteX="301dp"
-        tools:layout_editor_absoluteY="35dp" />
-
-    <TextView
-        android:id="@+id/textView_Inicio"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:id="@+id/encabezado"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Inicio"
-        android:textSize="24dp"
-        android:textColor="@color/white"
-        android:fontFamily="@font/jua_regular"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="81dp" />
+        android:background="@drawable/homepage_background"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView_saludo"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:id="@+id/transacciones"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hola, AMANDA!"
-        android:textSize="24dp"
-        android:textColor="#8FFFFFFF"
-        android:fontFamily="@font/jua_regular"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="139dp" />
-
-    <TextView
-        android:id="@+id/textView_Balance"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Balance Total"
-        android:textSize="24dp"
-        android:textColor="@color/white"
-        android:fontFamily="@font/jua_regular"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="183dp" />
-
-    <TextView
-        android:id="@+id/textView_moneda"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=" $ "
-        android:textSize="24dp"
-        android:textColor="@color/white"
-        android:fontFamily="@font/jua_regular"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="228dp" />
-
-    <TextView
-        android:id="@+id/textView_saldo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="88.888"
-        android:textSize="24dp"
-        android:textColor="@color/white"
-        android:fontFamily="@font/jua_regular"
-        tools:layout_editor_absoluteX="63dp"
-        tools:layout_editor_absoluteY="228dp" />
+        android:maxHeight="30dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/encabezado"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
