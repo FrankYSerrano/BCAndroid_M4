@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="El lugar mas seguro para tu dinero"
-        app:layout_constraintBottom_toTopOf="@+id/button_crear_cuenta"
+        app:layout_constraintBottom_toTopOf="@+id/button_signup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,7 +35,7 @@
         android:textSize="20dp"/>
 
     <Button
-        android:id="@+id/button_crear_cuenta"
+        android:id="@+id/button_signup"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginLeft="30dp"

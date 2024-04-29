@@ -10,8 +10,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-//        setContentView(R.layout.alkewallet_splash);
-        setContentView(R.layout.alkewallet_homepage);
+        setContentView(R.layout.activity_main);
     }
 }
