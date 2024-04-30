@@ -53,6 +53,7 @@ public class aw02_signup_login extends Fragment {
         /**
          * Navegación hacia login
          */
+
         TextView textView_login = view.findViewById(R.id.textView_login);
         textView_login.setOnClickListener(v -> {
             navController.navigate(R.id.aw04_login);

@@ -57,6 +57,7 @@
         app:layout_constraintStart_toStartOf="parent">
     </Button>
 
+
     <TextView
         android:id="@+id/textView_login"
         android:layout_width="wrap_content"
@@ -66,10 +67,15 @@
         android:textColor="@color/azul_alkewallet"
         android:fontFamily="@font/jua_regular"
         android:layout_marginBottom="22dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onTextViewClicked"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent">
     </TextView>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,16 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_path"
-    app:startDestination="@id/aw03_signup">
-    <fragment
-        android:id="@+id/aw01_splash"
-        android:name="com.example.alkewallet1.fragments.aw01_splash"
-        android:label="fragment_aw01_splash"
-        tools:layout="@layout/fragment_aw01_splash" >
-        <action
-            android:id="@+id/action_aw01_splash_to_aw02_signup_login"
-            app:destination="@id/aw02_signup_login" />
-    </fragment>
+    app:startDestination="@id/inicioFragment">
     <fragment
         android:id="@+id/aw02_signup_login"
         android:name="com.example.alkewallet1.fragments.aw02_signup_login"
@@ -52,9 +43,6 @@
         android:label="fragment_aw05_homepage"
         tools:layout="@layout/fragment_aw05_homepage" >
         <action
-            android:id="@+id/action_aw05_homepage_to_aw01_splash"
-            app:destination="@id/aw01_splash" />
-        <action
             android:id="@+id/action_aw05_homepage_to_aw08_profile"
             app:destination="@id/aw08_profile" />
         <action
@@ -86,10 +74,25 @@
         <action
             android:id="@+id/action_aw08_profile_to_aw05_homepage"
             app:destination="@id/aw05_homepage" />
+        <action
+            android:id="@+id/action_aw08_profile_to_inicioFragment"
+            app:destination="@id/inicioFragment" />
+        <action
+            android:id="@+id/action_aw08_profile_to_inicioFragment2"
+            app:destination="@id/inicioFragment" />
     </fragment>
     <fragment
         android:id="@+id/aw05_homepage_vacio2"
         android:name="com.example.alkewallet1.fragments.aw05_homepage_vacio"
         android:label="fragment_aw05_homepage_vacio"
         tools:layout="@layout/fragment_aw05_homepage_vacio" />
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="com.example.alkewallet1.fragments.iniciofragment"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" >
+        <action
+            android:id="@+id/action_inicioFragment_to_aw02_signup_login"
+            app:destination="@id/aw02_signup_login" />
+    </fragment>
 </navigation>
