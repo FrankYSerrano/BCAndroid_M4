@@ -4,26 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_background">
+    android:background="@drawable/login_background"
+    tools:context=".fragments.aw03_signup">
 
     <TextView
         android:id="@+id/textView_msg1"
         android:layout_width="313dp"
         android:layout_height="83dp"
-        android:fontFamily="@font/jua_regular"
         android:text="Registrarse y empeza a tranferir!"
         android:textSize="30dp"
+        android:fontFamily="@font/jua_regular"
         android:textStyle="bold"
+        tools:layout_editor_absoluteY="34dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="34dp" />
+        app:layout_constraintStart_toStartOf="parent">
+    </TextView>
 
     <LinearLayout
         android:id="@+id/layout_bloque"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:orientation="vertical"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,10 +36,11 @@
             android:id="@+id/textView_nombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/jua_regular"
             android:text="Nombre: "
             android:textSize="22dp"
-            android:textStyle="bold" />
+            android:fontFamily="@font/jua_regular"
+            android:textStyle="bold">
+        </TextView>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayout_nombre"
@@ -55,10 +58,11 @@
             android:id="@+id/textView_apellido"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/jua_regular"
             android:text="Apellido: "
             android:textSize="22dp"
-            android:textStyle="bold" />
+            android:fontFamily="@font/jua_regular"
+            android:textStyle="bold">
+        </TextView>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayout__apellido"
@@ -76,10 +80,11 @@
             android:id="@+id/textView_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/jua_regular"
             android:text="Email: "
             android:textSize="22dp"
-            android:textStyle="bold" />
+            android:fontFamily="@font/jua_regular"
+            android:textStyle="bold">
+        </TextView>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayout_email"
@@ -97,10 +102,11 @@
             android:id="@+id/textView_contrasena"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/jua_regular"
             android:text="Contraseña: "
             android:textSize="22dp"
-            android:textStyle="bold" />
+            android:fontFamily="@font/jua_regular"
+            android:textStyle="bold">
+        </TextView>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayout_contrasena"
@@ -119,10 +125,11 @@
             android:id="@+id/textView_reingresa_contrasena"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/jua_regular"
             android:text="Reingresa Contraseña: "
             android:textSize="22dp"
-            android:textStyle="bold" />
+            android:fontFamily="@font/jua_regular"
+            android:textStyle="bold">
+        </TextView>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayout_reingresa_contrasena"
@@ -134,43 +141,45 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/jua_regular"
-                android:hint="Reingresa tu contraseña" />
+                android:hint="Reingresa tu contraseña">
+            </com.google.android.material.textfield.TextInputEditText>
         </com.google.android.material.textfield.TextInputLayout>
-        />
     </LinearLayout>
 
     <Button
-        android:id="@+id/button_login"
+        android:id="@+id/button_signup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Crear Cuenta"
+        android:textSize="22dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/jua_regular"
+        android:textAllCaps="false"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:layout_marginBottom="30dp"
         android:background="@drawable/boton_redondeado"
-        android:fontFamily="@font/jua_regular"
-        android:text="Login"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="22dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.266"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/layout_bloque"
-        app:layout_constraintVertical_bias="0.913" />
+        app:layout_constraintVertical_bias="0.913">
+    </Button>
 
     <TextView
-        android:id="@+id/textView_signup"
+        android:id="@+id/textView_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/jua_regular"
-        android:text="Crear una nueva cuenta"
-        android:textColor="@color/azul_alkewallet"
+        android:text="Ya tienes cuenta??"
         android:textSize="20dp"
+        android:textColor="@color/azul_alkewallet"
+        android:fontFamily="@font/jua_regular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_login" />
+        app:layout_constraintTop_toBottomOf="@+id/button_signup">
+    </TextView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

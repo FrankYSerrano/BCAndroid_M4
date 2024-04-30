@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.aw08_profile">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="262dp"
+        android:layout_gravity="top"
+        android:background="@drawable/rectangle_grey">
+
+        <ImageView
+            android:id="@+id/ImageView_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_icon"
+            android:layout_alignLeft="@+id/textView_titulo"
+            android:layout_marginTop="50dp">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/textView_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Mi perfil"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/jua_regular"
+            android:gravity="center"
+            android:layout_marginTop="50dp">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/imageView_edit"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/edit_icon"
+            android:layout_alignRight="@+id/textView_titulo"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="50dp">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/ImageView_profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/profile_picture"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="60dp">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/textView_name"
+            android:layout_width="match_parent"
+            android:layout_height="24sp"
+            android:text="Amanda Alkemy"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/jua_regular"
+            android:lineHeight="24dp"
+            android:gravity="center"
+            android:layout_marginTop="210dp">
+        </TextView>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_information"
+        android:layout_width="345dp"
+        android:layout_height="64dp"
+        android:text="    Mi informacion"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/jua_regular"
+        android:textAllCaps="false"
+        android:textAlignment="textStart"
+        android:lineHeight="21dp"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/profile_icon"
+        android:drawableRight="@drawable/arrow_icon"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="-40dp">
+    </Button>
+
+    <Button
+        android:id="@+id/button_cards"
+        android:layout_width="345dp"
+        android:layout_height="64dp"
+        android:text="    Mis tarjetas"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/jua_regular"
+        android:textAllCaps="false"
+        android:textAlignment="textStart"
+        android:lineHeight="21dp"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/card_icon"
+        android:drawableRight="@drawable/arrow_icon"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="40dp">
+    </Button>
+
+    <Button
+        android:id="@+id/button_options"
+        android:layout_width="345dp"
+        android:layout_height="64dp"
+        android:text="    Opciones"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/jua_regular"
+        android:textAllCaps="false"
+        android:textAlignment="textStart"
+        android:lineHeight="21dp"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/settings_icon"
+        android:drawableRight="@drawable/arrow_icon"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="120dp">
+    </Button>
+
+    <Button
+        android:id="@+id/button_help"
+        android:layout_width="345dp"
+        android:layout_height="64dp"
+        android:text="    Centro de ayuda"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/jua_regular"
+        android:textAllCaps="false"
+        android:textAlignment="textStart"
+        android:lineHeight="21dp"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/help_icon"
+        android:drawableRight="@drawable/arrow_icon"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="200dp">
+    </Button>
+
+
+</FrameLayout>

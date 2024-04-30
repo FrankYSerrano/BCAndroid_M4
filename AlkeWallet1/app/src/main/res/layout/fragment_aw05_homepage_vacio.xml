@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.aw05_homepage_vacio"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ImageView_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/homepage_background">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_inicio"
+            android:text="Inicio"
+            android:fontFamily="@font/jua_regular"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp">
+        </TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profile_picture"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="330dp">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_saludo"
+            android:text="Hola! "
+            android:fontFamily="@font/jua_regular"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="30dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_nombre"
+            android:text="FRANK"
+            android:fontFamily="@font/jua_regular"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="100dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_balance"
+            android:text="Balance Total"
+            android:fontFamily="@font/jua_regular"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="30dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_currency"
+            android:text="$"
+            android:fontFamily="@font/jua_regular"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:layout_marginTop="190dp"
+            android:layout_marginLeft="30dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_ammount"
+            android:text="X.XXX.XXX"
+            android:fontFamily="@font/jua_regular"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:layout_marginTop="190dp"
+            android:layout_marginLeft="65dp">
+        </TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ImageView_notificaciones"
+            android:src="@drawable/notifications_icon"
+            android:layout_marginTop="190dp"
+            android:layout_marginLeft="330dp">
+        </ImageView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/request_button"
+                android:id="@+id/button_request"
+                android:layout_marginRight="10dp">
+            </Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/send_button"
+                android:id="@+id/button_send"
+                android:layout_marginLeft="10dp">
+            </Button>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ultimas Transacciones"
+            android:textAlignment="center"
+            android:fontFamily="@font/jua_regular"
+            android:textSize="20dp">
+        </TextView>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/empty_illustration"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </ImageView>
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jua_regular"
+            android:text="No hay transacciones registradas"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            tools:layout_editor_absoluteX="0dp">
+        </TextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

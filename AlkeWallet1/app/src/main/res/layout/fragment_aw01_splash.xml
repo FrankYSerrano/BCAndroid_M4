@@ -6,15 +6,15 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".fragments.aw01_splash"
     android:background="@color/azul_alkewallet">
 
     <ImageView
-        android:id="@+id/id_logo"
+        android:id="@+id/ImageView_id_logo"
         android:layout_width="106dp"
         android:layout_height="137dp"
         android:src="@drawable/logo_alkewallet"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        />
+        android:layout_centerHorizontal="true">
+    </ImageView>
 </RelativeLayout>
