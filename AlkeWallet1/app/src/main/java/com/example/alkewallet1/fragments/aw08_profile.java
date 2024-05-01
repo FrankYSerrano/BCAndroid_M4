@@ -55,7 +55,7 @@ public class aw08_profile extends Fragment {
          */
         Button button_information = view.findViewById(R.id.button_information);
         button_information.setOnClickListener(v->{
-            navController.navigate(R.id.inicioFragment);
+            navController.navigate(R.id.aw01_splash);
         });
 
         /**
@@ -63,7 +63,7 @@ public class aw08_profile extends Fragment {
          */
         Button button_cards = view.findViewById(R.id.button_cards);
         button_cards.setOnClickListener(v->{
-            navController.navigate(R.id.inicioFragment);
+            navController.navigate(R.id.aw01_splash);
         });
 
         /**
@@ -71,7 +71,7 @@ public class aw08_profile extends Fragment {
          */
         Button button_options = view.findViewById(R.id.button_options);
         button_options.setOnClickListener(v->{
-            navController.navigate(R.id.inicioFragment);
+            navController.navigate(R.id.aw01_splash);
         });
 
         /**
@@ -79,7 +79,7 @@ public class aw08_profile extends Fragment {
          */
         Button button_help = view.findViewById(R.id.button_help);
         button_help.setOnClickListener(v->{
-            navController.navigate(R.id.inicioFragment);
+            navController.navigate(R.id.aw01_splash);
         });
 
     }

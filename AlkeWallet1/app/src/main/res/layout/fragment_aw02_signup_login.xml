@@ -14,7 +14,7 @@
         android:src="@drawable/logo_alkewallet"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        app:layout_constraintBottom_toBottomOf="@+id/textView_login"
+        app:layout_constraintBottom_toBottomOf="@+id/button_login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -42,40 +42,34 @@
         android:id="@+id/button_signup"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:text="Crear cuenta nueva"
-        android:textSize="20dp"
-        android:textColor="@color/white"
-        android:fontFamily="@font/jua_regular"
-        android:background="@drawable/boton_redondeado"
-        android:textAllCaps="false"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView_login"
+        android:background="@drawable/boton_redondeado"
+        android:fontFamily="@font/jua_regular"
+        android:text="Crear cuenta nueva"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent">
-    </Button>
+        app:layout_constraintStart_toStartOf="parent"></Button>
 
-
-    <TextView
-        android:id="@+id/textView_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ya tiene cuenta?"
-        android:textSize="20dp"
-        android:textColor="@color/azul_alkewallet"
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
         android:fontFamily="@font/jua_regular"
-        android:layout_marginBottom="22dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:onClick="onTextViewClicked"
+        android:text="ya tienes cuenta?"
+        android:textAllCaps="false"
+        android:textColor="@color/azul_alkewallet"
+        android:textSize="20dp"
+        android:background="@color/transparente"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent">
-    </TextView>
-
-
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"></Button>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

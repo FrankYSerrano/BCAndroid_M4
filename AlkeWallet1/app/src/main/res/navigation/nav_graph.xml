@@ -3,39 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_path"
-    app:startDestination="@id/inicioFragment">
+    app:startDestination="@id/aw01_splash">
     <fragment
         android:id="@+id/aw02_signup_login"
         android:name="com.example.alkewallet1.fragments.aw02_signup_login"
         android:label="fragment_aw02_signup_login"
         tools:layout="@layout/fragment_aw02_signup_login" >
         <action
-            android:id="@+id/action_aw02_signup_login_to_aw03_signup"
-            app:destination="@id/aw03_signup" />
-        <action
-            android:id="@+id/action_aw02_signup_login_to_aw04_login"
+            android:id="@+id/action_aw02_signup_login_to_aw04_login2"
             app:destination="@id/aw04_login" />
-    </fragment>
-    <fragment
-        android:id="@+id/aw03_signup"
-        android:name="com.example.alkewallet1.fragments.aw03_signup"
-        android:label="fragment_aw03_signup"
-        tools:layout="@layout/fragment_aw03_signup" >
         <action
-            android:id="@+id/action_aw03_signup_to_aw04_login"
-            app:destination="@id/aw04_login" />
-    </fragment>
-    <fragment
-        android:id="@+id/aw04_login"
-        android:name="com.example.alkewallet1.fragments.aw04_login"
-        android:label="fragment_aw04_login"
-        tools:layout="@layout/fragment_aw04_login" >
-        <action
-            android:id="@+id/action_aw04_login_to_aw03_signup"
+            android:id="@+id/action_aw02_signup_login_to_aw03_signup2"
             app:destination="@id/aw03_signup" />
-        <action
-            android:id="@+id/action_aw04_login_to_aw05_homepage"
-            app:destination="@id/aw05_homepage" />
     </fragment>
     <fragment
         android:id="@+id/aw05_homepage"
@@ -51,12 +30,31 @@
         <action
             android:id="@+id/action_aw05_homepage_to_aw07_send"
             app:destination="@id/aw07_send" />
+        <action
+            android:id="@+id/action_aw05_homepage_to_aw04_login2"
+            app:destination="@id/aw04_login" />
+        <action
+            android:id="@+id/action_aw05_homepage_to_aw05_homepage_vacio"
+            app:destination="@id/aw05_homepage_vacio" />
+    </fragment>
+    <fragment
+        android:id="@+id/aw05_homepage_vacio"
+        android:name="com.example.alkewallet1.fragments.aw05_homepage_vacio"
+        android:label="fragment_aw05_homepage_vacio"
+        tools:layout="@layout/fragment_aw05_homepage_vacio" >
+        <action
+            android:id="@+id/action_aw05_homepage_vacio_to_aw01_splash"
+            app:destination="@id/aw01_splash" />
     </fragment>
     <fragment
         android:id="@+id/aw06_request"
         android:name="com.example.alkewallet1.fragments.aw06_request"
         android:label="fragment_aw06_request"
-        tools:layout="@layout/fragment_aw06_request" />
+        tools:layout="@layout/fragment_aw06_request" >
+        <action
+            android:id="@+id/action_aw06_request_to_aw05_homepage"
+            app:destination="@id/aw05_homepage" />
+    </fragment>
     <fragment
         android:id="@+id/aw07_send"
         android:name="com.example.alkewallet1.fragments.aw07_send"
@@ -75,24 +73,34 @@
             android:id="@+id/action_aw08_profile_to_aw05_homepage"
             app:destination="@id/aw05_homepage" />
         <action
-            android:id="@+id/action_aw08_profile_to_inicioFragment"
-            app:destination="@id/inicioFragment" />
-        <action
-            android:id="@+id/action_aw08_profile_to_inicioFragment2"
-            app:destination="@id/inicioFragment" />
+            android:id="@+id/action_aw08_profile_to_aw01_splash"
+            app:destination="@id/aw01_splash" />
     </fragment>
     <fragment
-        android:id="@+id/aw05_homepage_vacio2"
-        android:name="com.example.alkewallet1.fragments.aw05_homepage_vacio"
-        android:label="fragment_aw05_homepage_vacio"
-        tools:layout="@layout/fragment_aw05_homepage_vacio" />
-    <fragment
-        android:id="@+id/inicioFragment"
-        android:name="com.example.alkewallet1.fragments.iniciofragment"
-        android:label="fragment_inicio"
-        tools:layout="@layout/fragment_inicio" >
+        android:id="@+id/aw04_login"
+        android:name="com.example.alkewallet1.fragments.aw04_login"
+        android:label="fragment_aw04_login"
+        tools:layout="@layout/fragment_aw04_login" >
         <action
-            android:id="@+id/action_inicioFragment_to_aw02_signup_login"
+            android:id="@+id/action_aw04_login2_to_aw05_homepage"
+            app:destination="@id/aw05_homepage" />
+    </fragment>
+    <fragment
+        android:id="@+id/aw01_splash"
+        android:name="com.example.alkewallet1.fragments.aw01_splash"
+        android:label="fragment_aw01_splash"
+        tools:layout="@layout/fragment_aw01_splash" >
+        <action
+            android:id="@+id/action_aw01_splash_to_aw02_signup_login"
             app:destination="@id/aw02_signup_login" />
+    </fragment>
+    <fragment
+        android:id="@+id/aw03_signup"
+        android:name="com.example.alkewallet1.fragments.aw03_signup"
+        android:label="fragment_aw03_signup"
+        tools:layout="@layout/fragment_aw03_signup" >
+        <action
+            android:id="@+id/action_aw03_signup_to_aw04_login2"
+            app:destination="@id/aw04_login" />
     </fragment>
 </navigation>

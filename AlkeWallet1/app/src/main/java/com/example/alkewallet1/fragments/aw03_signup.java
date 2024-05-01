@@ -46,15 +46,15 @@ public class aw03_signup extends Fragment {
          * Navegación hacia signup
          */
         Button button_SignUp = view.findViewById(R.id.button_signup);
-        button_SignUp.setOnClickListener(v->{
-            navController.navigate(R.id.aw03_signup);
+        button_SignUp.setOnClickListener(v -> {
+            navController.navigate(R.id.aw04_login);
         });
 
         /**
          * Navegación hacia login
          */
-        TextView textView_login = view.findViewById(R.id.textView_login);
-        textView_login.setOnClickListener(v -> {
+        Button button_login = view.findViewById(R.id.button_login);
+        button_login.setOnClickListener(v->{
             navController.navigate(R.id.aw04_login);
         });
 

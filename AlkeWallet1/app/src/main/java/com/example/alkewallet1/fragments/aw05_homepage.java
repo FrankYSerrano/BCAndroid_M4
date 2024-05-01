@@ -80,5 +80,13 @@ public class aw05_homepage extends Fragment {
             navController.navigate(R.id.aw07_send);
         });
 
+        /**
+         * Navegación hacia send
+         */
+        Button button_limpia = view.findViewById(R.id.button_limpia);
+        button_limpia.setOnClickListener(v->{
+            navController.navigate(R.id.aw05_homepage_vacio);
+        });
+
     }
 }

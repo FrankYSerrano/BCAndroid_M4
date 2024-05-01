@@ -105,30 +105,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="392dp"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp">
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/button_request"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/request_button"
-                android:layout_marginRight="10dp">
-            </Button>
+                android:layout_marginRight="10dp"
+                android:background="@drawable/request_button"></Button>
 
             <Button
                 android:id="@+id/button_send"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/send_button"
-                android:layout_marginLeft="10dp">
-            </Button>
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/send_button"></Button>
         </LinearLayout>
 
         <TextView
@@ -367,6 +366,12 @@
                     android:textAlignment="center">
                 </TextView>
             </LinearLayout>
+            <Button
+                android:id="@+id/button_limpia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Limpiar registro de transacciones">
+            </Button>
         </LinearLayout>
     </LinearLayout>
 
